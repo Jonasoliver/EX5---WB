@@ -1,0 +1,35 @@
+.row {
+    text-align: center;
+    font-size: medium;
+    margin: 1rem;
+  }
+  .label-large {
+    font-size: 20px;
+  }
+  .input-field input {
+    margin-top: 1rem !important;
+    border-bottom-color: palevioletred !important;
+  }
+  .input-field label {
+    margin-top: 1rem !important;
+    font-size: 18px;
+    color: palevioletred;
+  }
+  .input-field label:focus {
+      font-size: 18px;
+      color: palevioletred;
+    }
+  
+  .input-field input:focus + label {
+    font-size: 20px;
+    font-weight: 500;
+    color: palevioletred !important;
+  }
+  .div-seletor {
+    margin: 1rem 10rem;
+    text-align: center;
+  }
+.formVenda{
+    margin: 1rem 10rem;
+    text-align: center;
+}

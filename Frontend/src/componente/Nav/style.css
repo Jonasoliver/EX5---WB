@@ -1,0 +1,25 @@
+.mb-3{
+    margin: 1rem;
+}
+.mb-3 .tab-content {
+    
+    background-color: lightblue; 
+    width: 100%;/* Define a cor de fundo da aba ativa */
+  }
+.mb-3 .nav-link {
+    color: palevioletred; /* Cor do texto */
+    font-size:19px ;
+    font-weight: medium !important; /* Torna o texto em negrito */
+  }
+
+/* Estilo para aba ativa */
+.mb-3 .nav-link.active {
+    font-weight: 500;
+    color: palevioletred;
+}
+
+.cliente-container{
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+  

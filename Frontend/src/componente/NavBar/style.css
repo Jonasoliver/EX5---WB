@@ -1,0 +1,8 @@
+a {
+    outline: none;
+}
+
+.nav-wrapper a {
+    text-decoration: none;
+    color: inherit;
+}
