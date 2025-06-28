@@ -1,35 +1,64 @@
+
+body {
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+  font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+}
+
 .row {
-    text-align: center;
-    font-size: medium;
-    margin: 1rem;
-  }
-  .label-large {
-    font-size: 20px;
-  }
-  .input-field input {
-    margin-top: 1rem !important;
-    border-bottom-color: palevioletred !important;
-  }
-  .input-field label {
-    margin-top: 1rem !important;
-    font-size: 18px;
-    color: palevioletred;
-  }
-  .input-field label:focus {
-      font-size: 18px;
-      color: palevioletred;
-    }
-  
-  .input-field input:focus + label {
-    font-size: 20px;
-    font-weight: 500;
-    color: palevioletred !important;
-  }
-  .div-seletor {
-    margin: 1rem 10rem;
-    text-align: center;
-  }
-.formVenda{
-    margin: 1rem 10rem;
-    text-align: center;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 1.5rem 0;
+}
+
+.label-large {
+  font-size: 22px;
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+.input-field input {
+  margin-top: 1rem !important;
+  border: 2px solid #a5b4fc;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  background: #fff;
+  transition: border-color 0.2s;
+  box-shadow: 0 2px 8px rgba(79,70,229,0.05);
+}
+
+.input-field input:focus {
+  border-color: #6366f1;
+  outline: none;
+  box-shadow: 0 4px 16px rgba(99,102,241,0.10);
+}
+
+.input-field label {
+  margin-top: 1rem !important;
+  font-size: 18px;
+  color: #6366f1;
+  font-weight: 500;
+}
+
+.input-field label:focus {
+  color: #4f46e5;
+}
+
+.input-field input:focus + label {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4f46e5 !important;
+}
+
+.div-seletor {
+  margin: 1.5rem 10rem;
+  text-align: center;
+}
+
+.formVenda {
+  margin: 1.5rem 10rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(99,102,241,0.08);
+  padding: 2rem 2rem 1rem 2rem;
 }

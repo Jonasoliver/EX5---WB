@@ -73,34 +73,38 @@ async function insereCliente() {
 
     if(count === 0 ){
         const clientesFicticios: ICreateCliente[] = [
-            { nome: 'João Silva', nomeSocial: 'João', genero: 'Masculino', cpf: { valor: '123456781', dataEmissao: new Date()}, rgs: [{ valor: '987654321', dataEmissao: new Date()}], telefones: [{ ddd: '11', numero: '999991111' }] },
-            { nome: 'Maria Oliveira', nomeSocial: 'Maria', genero: 'Feminino', cpf: { valor: '987652322', dataEmissao: new Date()}, rgs: [{ valor: '123456782', dataEmissao: new Date()}], telefones: [{ ddd: '12', numero: '999992222' }] },
-            { nome: 'José Santos', nomeSocial: 'José', genero: 'Masculino', cpf: { valor: '987654353', dataEmissao: new Date()}, rgs: [{ valor: '123456783', dataEmissao: new Date()}], telefones: [{ ddd: '13', numero: '999993333' }] },
-            { nome: 'Ana Silva', nomeSocial: 'Ana', genero: 'Feminino', cpf: { valor: '987654324', dataEmissao: new Date()}, rgs: [{ valor: '123456784', dataEmissao: new Date()}], telefones: [{ ddd: '35', numero: '999994444' }] },
-            { nome: 'Pedro Oliveira', nomeSocial: 'Pedro', genero: 'Masculino', cpf: { valor: '987664325', dataEmissao: new Date()}, rgs: [{ valor: '123456785', dataEmissao: new Date()}], telefones: [{ ddd: '12', numero: '999995555' }] },
-            { nome: 'Mariana Santos', nomeSocial: 'Mariana', genero: 'Feminino', cpf: { valor: '987651326', dataEmissao: new Date()}, rgs: [{ valor: '123456786', dataEmissao: new Date()}], telefones: [{ ddd: '13', numero: '999996666' }] },
-            { nome: 'Lucas Silva', nomeSocial: 'Lucas', genero: 'Masculino', cpf: { valor: '987654227', dataEmissao: new Date()}, rgs: [{ valor: '123456787', dataEmissao: new Date()}], telefones: [{ ddd: '11', numero: '999997777' }] },
-            { nome: 'Carla Oliveira', nomeSocial: 'Carla', genero: 'Feminino', cpf: { valor: '987658328', dataEmissao: new Date()}, rgs: [{ valor: '123456788', dataEmissao: new Date()}], telefones: [{ ddd: '15', numero: '999998888' }] },
-            { nome: 'Gabriel Santos', nomeSocial: 'Gabriel', genero: 'Masculino', cpf: { valor: '987954329', dataEmissao: new Date()}, rgs: [{ valor: '123456789', dataEmissao: new Date()}], telefones: [{ ddd: '35', numero: '999999999' }] },
-            { nome: 'Fernanda Silva', nomeSocial: 'Fernanda', genero: 'Feminino', cpf: { valor: '987654321', dataEmissao: new Date()}, rgs: [{ valor: '123456790', dataEmissao: new Date()}], telefones: [{ ddd: '11', numero: '888888888' }] },
-            { nome: 'Rafael Oliveira', nomeSocial: 'Rafael', genero: 'Masculino', cpf: { valor: '987654322', dataEmissao: new Date()}, rgs: [{ valor: '123456791', dataEmissao: new Date()}], telefones: [{ ddd: '11', numero: '777777777' }] },
-            { nome: 'Juliana Santos', nomeSocial: 'Juliana', genero: 'Feminino', cpf: { valor: '987654323', dataEmissao: new Date()}, rgs: [{ valor: '123456792', dataEmissao: new Date()}], telefones: [{ ddd: '35', numero: '666666666' }] },
-            { nome: 'Patrícia Oliveira', nomeSocial: 'Patrícia', genero: 'Feminino', cpf: { valor: '987654325', dataEmissao: new Date()}, rgs: [{ valor: '123456794', dataEmissao: new Date()}], telefones: [{ ddd: '11', numero: '444444444' }] },
-            { nome: 'Gustavo Santos', nomeSocial: 'Gustavo', genero: 'Masculino', cpf: { valor: '987654326', dataEmissao: new Date()}, rgs: [{ valor: '123456795', dataEmissao: new Date()}], telefones: [{ ddd: '11', numero: '333333333' }] },
-            { nome: 'Tatiane Silva', nomeSocial: 'Tatiane', genero: 'Feminino', cpf: { valor: '987654327', dataEmissao: new Date()}, rgs: [{ valor: '123456796', dataEmissao: new Date()}], telefones: [{ ddd: '35', numero: '222222222' }] },
-            { nome: 'Ricardo Oliveira', nomeSocial: 'Ricardo', genero: 'Masculino', cpf: { valor: '987654328', dataEmissao: new Date()}, rgs: [{ valor: '123456797', dataEmissao: new Date()}], telefones: [{ ddd: '11', numero: '111111111' }] },
-            { nome: 'Aline Santos', nomeSocial: 'Aline', genero: 'Outros', cpf: { valor: '987654329', dataEmissao: new Date()}, rgs: [{ valor: '123456798', dataEmissao: new Date()}], telefones: [{ ddd: '11', numero: '000000000' }] },
-            { nome: 'Marcos Silva', nomeSocial: 'Marcos', genero: 'Outros', cpf: { valor: '987654330', dataEmissao: new Date()}, rgs: [{ valor: '123456799', dataEmissao: new Date()}], telefones: [{ ddd: '12', numero: '999999000' }] },
-            { nome: 'Carolina Oliveira', nomeSocial: 'Carolina', genero: 'Outros', cpf: { valor: '987654331', dataEmissao: new Date()}, rgs: [{ valor: '123456800', dataEmissao: new Date()}], telefones: [{ ddd: '11', numero: '888888000' }] },
-            { nome: 'Raphael Santos', nomeSocial: 'Raphael', genero: 'Outros', cpf: { valor: '987654332', dataEmissao: new Date()}, rgs: [{ valor: '123456801', dataEmissao: new Date()}], telefones: [{ ddd: '11', numero: '777777000' }] },
-            { nome: 'Camila Silva', nomeSocial: 'Camila', genero: 'Outros', cpf: { valor: '987654333', dataEmissao: new Date()}, rgs: [{ valor: '123456802', dataEmissao: new Date()}], telefones: [{ ddd: '11', numero: '666666000' }] },
-            { nome: 'Diego Oliveira', nomeSocial: 'Diego', genero: 'Outros', cpf: { valor: '987654334', dataEmissao: new Date()}, rgs: [{ valor: '123456803', dataEmissao: new Date()}], telefones: [{ ddd: '11', numero: '555555000' }] }]
-        
+            { nome: 'Alice Martins', nomeSocial: 'Alice', genero: 'Feminino', cpf: { valor: '111111111', dataEmissao: new Date()}, rgs: [{ valor: '222222221', dataEmissao: new Date()}], telefones: [{ ddd: '21', numero: '900001111' }] },
+            { nome: 'Bruno Souza', nomeSocial: 'Bruno', genero: 'Masculino', cpf: { valor: '111111112', dataEmissao: new Date()}, rgs: [{ valor: '222222222', dataEmissao: new Date()}], telefones: [{ ddd: '22', numero: '900002222' }] },
+            { nome: 'Carla Lima', nomeSocial: 'Carla', genero: 'Feminino', cpf: { valor: '111111113', dataEmissao: new Date()}, rgs: [{ valor: '222222223', dataEmissao: new Date()}], telefones: [{ ddd: '23', numero: '900003333' }] },
+            { nome: 'Daniel Pereira', nomeSocial: 'Daniel', genero: 'Masculino', cpf: { valor: '111111114', dataEmissao: new Date()}, rgs: [{ valor: '222222224', dataEmissao: new Date()}], telefones: [{ ddd: '24', numero: '900004444' }] },
+            { nome: 'Eduarda Costa', nomeSocial: 'Eduarda', genero: 'Feminino', cpf: { valor: '111111115', dataEmissao: new Date()}, rgs: [{ valor: '222222225', dataEmissao: new Date()}], telefones: [{ ddd: '25', numero: '900005555' }] },
+            { nome: 'Felipe Rocha', nomeSocial: 'Felipe', genero: 'Masculino', cpf: { valor: '111111116', dataEmissao: new Date()}, rgs: [{ valor: '222222226', dataEmissao: new Date()}], telefones: [{ ddd: '26', numero: '900006666' }] },
+            { nome: 'Gabriela Alves', nomeSocial: 'Gabriela', genero: 'Feminino', cpf: { valor: '111111117', dataEmissao: new Date()}, rgs: [{ valor: '222222227', dataEmissao: new Date()}], telefones: [{ ddd: '27', numero: '900007777' }] },
+            { nome: 'Henrique Dias', nomeSocial: 'Henrique', genero: 'Masculino', cpf: { valor: '111111118', dataEmissao: new Date()}, rgs: [{ valor: '222222228', dataEmissao: new Date()}], telefones: [{ ddd: '28', numero: '900008888' }] },
+            { nome: 'Isabela Ramos', nomeSocial: 'Isabela', genero: 'Feminino', cpf: { valor: '111111119', dataEmissao: new Date()}, rgs: [{ valor: '222222229', dataEmissao: new Date()}], telefones: [{ ddd: '29', numero: '900009999' }] },
+            { nome: 'João Pedro', nomeSocial: 'João', genero: 'Masculino', cpf: { valor: '111111120', dataEmissao: new Date()}, rgs: [{ valor: '222222230', dataEmissao: new Date()}], telefones: [{ ddd: '30', numero: '900001010' }] },
+            { nome: 'Karen Freitas', nomeSocial: 'Karen', genero: 'Feminino', cpf: { valor: '111111121', dataEmissao: new Date()}, rgs: [{ valor: '222222231', dataEmissao: new Date()}], telefones: [{ ddd: '31', numero: '900001111' }] },
+            { nome: 'Leonardo Barros', nomeSocial: 'Leo', genero: 'Masculino', cpf: { valor: '111111122', dataEmissao: new Date()}, rgs: [{ valor: '222222232', dataEmissao: new Date()}], telefones: [{ ddd: '32', numero: '900002222' }] },
+            { nome: 'Marina Torres', nomeSocial: 'Marina', genero: 'Feminino', cpf: { valor: '111111123', dataEmissao: new Date()}, rgs: [{ valor: '222222233', dataEmissao: new Date()}], telefones: [{ ddd: '33', numero: '900003333' }] },
+            { nome: 'Nicolas Pinto', nomeSocial: 'Nico', genero: 'Masculino', cpf: { valor: '111111124', dataEmissao: new Date()}, rgs: [{ valor: '222222234', dataEmissao: new Date()}], telefones: [{ ddd: '34', numero: '900004444' }] },
+            { nome: 'Olivia Mendes', nomeSocial: 'Olivia', genero: 'Feminino', cpf: { valor: '111111125', dataEmissao: new Date()}, rgs: [{ valor: '222222235', dataEmissao: new Date()}], telefones: [{ ddd: '35', numero: '900005555' }] },
+            { nome: 'Paulo Castro', nomeSocial: 'Paulo', genero: 'Masculino', cpf: { valor: '111111126', dataEmissao: new Date()}, rgs: [{ valor: '222222236', dataEmissao: new Date()}], telefones: [{ ddd: '36', numero: '900006666' }] },
+            { nome: 'Quésia Lopes', nomeSocial: 'Quésia', genero: 'Feminino', cpf: { valor: '111111127', dataEmissao: new Date()}, rgs: [{ valor: '222222237', dataEmissao: new Date()}], telefones: [{ ddd: '37', numero: '900007777' }] },
+            { nome: 'Rafael Nunes', nomeSocial: 'Rafa', genero: 'Masculino', cpf: { valor: '111111128', dataEmissao: new Date()}, rgs: [{ valor: '222222238', dataEmissao: new Date()}], telefones: [{ ddd: '38', numero: '900008888' }] },
+            { nome: 'Sabrina Farias', nomeSocial: 'Sabrina', genero: 'Feminino', cpf: { valor: '111111129', dataEmissao: new Date()}, rgs: [{ valor: '222222239', dataEmissao: new Date()}], telefones: [{ ddd: '39', numero: '900009999' }] },
+            { nome: 'Thiago Gomes', nomeSocial: 'Thiago', genero: 'Masculino', cpf: { valor: '111111130', dataEmissao: new Date()}, rgs: [{ valor: '222222240', dataEmissao: new Date()}], telefones: [{ ddd: '40', numero: '900001212' }] },
+            { nome: 'Ursula Vieira', nomeSocial: 'Ursula', genero: 'Feminino', cpf: { valor: '111111131', dataEmissao: new Date()}, rgs: [{ valor: '222222241', dataEmissao: new Date()}], telefones: [{ ddd: '41', numero: '900002323' }] },
+            { nome: 'Vinicius Silva', nomeSocial: 'Vini', genero: 'Masculino', cpf: { valor: '111111132', dataEmissao: new Date()}, rgs: [{ valor: '222222242', dataEmissao: new Date()}], telefones: [{ ddd: '42', numero: '900003434' }] },
+            { nome: 'Wesley Martins', nomeSocial: 'Wesley', genero: 'Masculino', cpf: { valor: '111111133', dataEmissao: new Date()}, rgs: [{ valor: '222222243', dataEmissao: new Date()}], telefones: [{ ddd: '43', numero: '900004545' }] },
+            { nome: 'Xuxa Souza', nomeSocial: 'Xuxa', genero: 'Feminino', cpf: { valor: '111111134', dataEmissao: new Date()}, rgs: [{ valor: '222222244', dataEmissao: new Date()}], telefones: [{ ddd: '44', numero: '900005656' }] },
+            { nome: 'Yuri Batista', nomeSocial: 'Yuri', genero: 'Masculino', cpf: { valor: '111111135', dataEmissao: new Date()}, rgs: [{ valor: '222222245', dataEmissao: new Date()}], telefones: [{ ddd: '45', numero: '900006767' }] },
+            { nome: 'Zilda Campos', nomeSocial: 'Zilda', genero: 'Feminino', cpf: { valor: '111111136', dataEmissao: new Date()}, rgs: [{ valor: '222222246', dataEmissao: new Date()}], telefones: [{ ddd: '46', numero: '900007878' }] }
+        ];
         for (const cliente of clientesFicticios) {
             await clienteService.criarCliente(cliente)
         }
         console.log(`Clientes adicionados com sucesso!`)
-}
+    }
     
 }
 

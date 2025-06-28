@@ -9,6 +9,27 @@ import { IReadtelefone } from "../../Interface/Cliente/ITefefone";
 import { IReadRg } from "../../Interface/Cliente/IRg";
 
 class ClienteService {
+    // Listar os 10 clientes que menos consumiram produtos ou serviços (em quantidade)
+    public async listarClientesMenosConsumiramQuantidade() {
+        try {
+            // Soma quantidade de vendas (produto ou serviço) por cliente
+            const result = await this.clienteRespository.query(`
+                SELECT c.cliId, c.nome, c.genero, COALESCE(SUM(v.quantidade),0) as total_consumido
+                FROM cliente c
+                LEFT JOIN venda v ON v.cliId = c.cliId
+                GROUP BY c.cliId, c.nome, c.genero
+                ORDER BY total_consumido ASC
+                LIMIT 10;
+            `);
+            if (!result || result.length === 0) {
+                return { success: false, message: 'Nenhum cliente encontrado.' };
+            }
+            return { success: true, message: 'Clientes que menos consumiram encontrados!', data: result };
+        } catch (error) {
+            console.error(`Erro ao listar clientes que menos consumiram: ${error}`);
+            return { success: false, message: 'Erro ao listar clientes que menos consumiram.' };
+        }
+    }
     private clienteRespository: Repository<Cliente>
     private cpfService: CpfService
     private rgService: RgService
