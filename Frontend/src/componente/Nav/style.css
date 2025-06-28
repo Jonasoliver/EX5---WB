@@ -1,25 +1,41 @@
-.mb-3{
-    margin: 1rem;
+
+.mb-3 {
+  margin: 1.5rem 0.5rem;
+  background: #f1f5f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(99,102,241,0.07);
+  padding: 0.5rem 1.5rem;
 }
+
 .mb-3 .tab-content {
-    
-    background-color: lightblue; 
-    width: 100%;/* Define a cor de fundo da aba ativa */
-  }
-.mb-3 .nav-link {
-    color: palevioletred; /* Cor do texto */
-    font-size:19px ;
-    font-weight: medium !important; /* Torna o texto em negrito */
-  }
-
-/* Estilo para aba ativa */
-.mb-3 .nav-link.active {
-    font-weight: 500;
-    color: palevioletred;
+  background: #e0e7ff;
+  width: 100%;
+  border-radius: 8px;
+  padding: 1rem 0;
 }
 
-.cliente-container{
-    margin-left: 10rem;
-    margin-right: 10rem;
+.mb-3 .nav-link {
+  color: #6366f1;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px 8px 0 0;
+  transition: background 0.2s, color 0.2s;
+}
+
+.mb-3 .nav-link.active {
+  font-weight: 700;
+  color: #fff;
+  background: #6366f1;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.10);
+}
+
+.cliente-container {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(99,102,241,0.06);
+  padding: 2rem 2rem 1rem 2rem;
 }
   
