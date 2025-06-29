@@ -7,6 +7,7 @@ import RoutesServico from  './routes/Servico/servicoRouter'
 import RoutesCliente from  './routes/Cliente/cliente'
 import RoutesFuncionario from './routes/Funcionario/funcionarioRouter'
 import RoutesVenda from './routes/Venda/vendaRouter'
+import RoutesRelatorio from './routes/Relatorio/relatorioRouter'
 import FuncionarioService from './service/Funcionario/funcionarioService'
 import Funcionario from './entity/Funcionario/funcionario'
 import Cliente from './entity/Cliente/cliente'
@@ -27,6 +28,7 @@ app.use(RoutesServico)
 app.use(RoutesCliente)
 app.use(RoutesFuncionario)
 app.use(RoutesVenda)
+app.use(RoutesRelatorio)
 
 async function iniciaProjeto(){
     try{
